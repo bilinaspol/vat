@@ -40,7 +40,7 @@ function saveToSql(res) {
     
        all.forEach((r,i) => {
             console.log(r,i);
-        let arr=r.split(',');   
+        let arr=r.split(/\t|,/);   
         stmt.run(i,arr[0],arr[1],arr[2])
        })
       stmt.finalize();
@@ -57,4 +57,4 @@ function saveToSql(res) {
     db.close();  
 }
 
-app.listen(3000);
+app.listen(3001);

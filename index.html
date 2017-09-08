@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Upload file</title>
+    <title>Upload CSV file</title>
 </head>
 <body>
+<p>Upload your CSV-file with "," or "\t" separator or download and then upload for testing<br>
+our small <a href="persons-small-tab.csv">persons-small-tab.csv - 200 persons</a> or <br>
+large <a href="persons.csv">persons.csv 5000 persons</a> and wait little bit for result</p>  
 <form action="/" enctype="multipart/form-data" method="post">
     <input type="file" name="persons.csv">
     <input type="submit" value="Upload">
